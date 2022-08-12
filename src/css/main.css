@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+#q4Wrapper {
+  background-color: #2A3035;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+#q4Wrapper h1, #q4Wrapper h3 {
+  margin: 0;
+}
+#q4Wrapper h1 {
+  font-size: 48px;
+}
+#q4Wrapper h3 {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+#q4Wrapper header, #q4Wrapper footer {
+  background-color: #22272B;
+}
+#q4Wrapper header {
+  padding: 20px;
+}
+#q4Wrapper footer {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#q4Wrapper article {
+  text-align: center;
+}
+#q4Wrapper article img {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+#q4Wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+}
+#q4Wrapper a:hover {
+  transform: scale(1.05);
+}
+#q4Wrapper a span {
+  opacity: 0.5;
+}
+
+.layout_inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.layout_header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Begin styling the report items here! */
+.reports {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) { 
+  .reports {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+.reports_file_information{
+  color: gray;
+}
+
+.pagenumbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagenumbers button {
+  width: 30px;
+  height: 30px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background-color: #808075;
+
+  margin: 5px;
+  transition: 0.4s;
+
+  color: #FFF;
+  font-size: 18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagenumbers button:hover {
+  background-color: #808075;
+}
+
+.pagenumbers button.active {
+  background-color: #22272B;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
